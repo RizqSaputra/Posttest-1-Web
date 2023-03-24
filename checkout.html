@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/checkout.css">
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Checkout</title>
+
+</head>
+<body data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0" cz-shortcut-listen="true">
+    <div class="container">
+        <header>
+            <label class="logo"><img src="gambar/Ud Haderah.png"></label>
+                <nav>
+                    <ul class="navbar">
+                        <li><a href="beranda.html">Beranda</a></li>
+                        <li class="garis"><a href="produk.html">Produk</a></li>
+                        <li><a href="keluhan.html">Keluhan</a></li>
+                        <li><a href="lokasi.html">Lokasi</a></li>
+                        <li class="dropdown">
+                            <a href="javascript:void{0}" class="dropbtn"><img src="gambar/k.jpg" alt=""></a>
+                            <div class="dropcontent">
+                                <a href="#"><p><span> <i class="fa-solid fa-user"></i> </span><span id="nama"></span></p></a>
+                                <a href="#"><p><span> <i class="fa-solid fa-envelope"></i> </span><span id="email"></span></p></a>
+                                <a href="login.html"><p> <i class="fa-solid fa-right-from-bracket"></i> Log Out</p></a>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+        </header>
+        <main id="main"> 
+            <div class="page">    
+                <nav>
+                    <div class="container">
+                    <ol>
+                        <li><a href="produk.html">Produk</a></li>
+                        <li>Checkout</li>    
+                    </ol>
+                    </div>
+                </nav>       
+            </div>  
+        <section id="checkout" class="boxcheckout aos-init" data-aos="fade-up" data-aos-duration="1500">
+            <div class="checkout">
+                <h2>Checkout</h2>
+                <form id="beli">
+                <div class="product">
+                    <img src="gambar/Kayu Meranti.png" alt="Product Image">
+                    <div class="product-info">
+                        <h3>Kayu Meranti</h3>
+                        <div class="input-box">
+                            <span class="detail">Nomor Hp</span>
+                            <input type="text" id="nomor" placeholder="Masukkan Nomor Hp Anda" required="">
+                        </div>
+                        <div class="input-box">
+                            <span class="detail">Alamat</span>
+                            <input type="text" id="alamat" placeholder="Masukkan alamat Anda" required="">
+                        </div>
+                        <div class="jumlah">
+                            <p>Jumlah</p>
+                            <div class="input-group">
+                                <button class="minus-btn" type="button" name="button">-</button>
+                                <input type="number" id="stok" name="quantity" value="0" min="0" max="100">
+                                <button class="plus-btn" type="button" name="button">+</button>
+                            </div>                                          
+                        </div>
+                    </div>
+            </div>
+            <div class="total">
+                <div class="totals">
+                    <p>Stok: <span id="isistok">0</span></p>
+                    <p>Harga Rp 40.000</p> 
+                </div>
+                    <p>Total Harga: <span id="harga">Rp&nbsp;160.000</span></p>
+                </div>
+                <button type="submit" class="checkout-btn">Checkout</button>
+                </form>
+            </div>   
+                         
+        </section>
+        <footer>
+            <p>©Copyright 2023 Rizq Saputra</p>
+        </footer>
+        </main>
+    </div>
+
+    <script src="js/beranda.js"></script>
+    <script src="js/checkout.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>AOS.init();</script>
+
+</body>
+</html>

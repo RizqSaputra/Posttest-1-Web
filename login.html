@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/login.css">
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>login</title>
+</head>
+<body>
+    <div class="container">        
+        <div class="box" data-aos="fade-up" data-aos-duration="1500"> 
+            <h1>Login</h1>               
+            <section class="login">            
+            <div class="kiri">
+                <img src="gambar/login.svg" alt="">
+            </div>
+                <div class="kanan">
+                    <form id="loginform">
+                        <div class="inputan">                            
+                            <div class="kolominput">
+                                <i class="fa-solid fa-envelope"></i>
+                                <input type="text" id="email" placeholder="Email" required>
+                            </div>
+                            <div class="kolominput">
+                                <i class="fa-solid fa-lock"></i>
+                                <input type="password" id="pass" placeholder="Password" required>
+                            </div>                    
+                            <p>Belum punya akun ? <a href="daftar.html">Daftar</a></p>
+                        </div>
+                        <div class="btn-field">
+                            <button type="submit" id="masuk">Masuk</button>
+                        </div>                                
+                    </form>
+                </div>
+                </section>
+                </div>
+
+            </div>
+
+        <footer>
+            <p>©Copyright 2023 Rizq Saputra</p>
+        </footer>
+        </div>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>AOS.init();</script>
+        <script src="js/login.js"></script>
+</body>
+</html>
