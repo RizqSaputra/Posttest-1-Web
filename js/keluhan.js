@@ -1,27 +1,29 @@
-function submitForm() {
-    var nama = document.getElementById('name').value;
-    var hari = document.getElementById('hari').value;
-    var email = document.getElementById('inputemail').value;
-    var nomor = document.getElementById('nomor').value;
-    var keluhan = document.getElementById('ikeluhan').value;
-    var radios = document.getElementsByName("gender");
-    var gender = "";
+let dataKeluhan = JSON.parse(sessionStorage.getItem('dataKeluhan')) || [];
 
-    for (var i = 0; i < radios.length; i++) {
+function submitForm() {
+    let nama = document.getElementById('name').value;
+    let hari = document.getElementById('hari').value;
+    let email = document.getElementById('inputemail').value;
+    let nomor = document.getElementById('nomor').value;
+    let keluhan = document.getElementById('ikeluhan').value;
+    let radios = document.getElementsByName("gender");
+    let gender = "";
+
+    for (let i = 0; i < radios.length; i++) {
     if (radios[i].checked) {
         gender = radios[i].value;
         break;
     }
     }
 
-    var kayu = [];
-    var checkboxes = document.querySelectorAll('input[type=checkbox]:checked');
+    let kayu = [];
+    let checkboxes = document.querySelectorAll('input[type=checkbox]:checked');
 
-    for (var i = 0; i < checkboxes.length; i++) {
+    for (let i = 0; i < checkboxes.length; i++) {
     kayu.push(checkboxes[i].value);
     }
 
-    sessionStorage.setItem('dataKeluhan', JSON.stringify({
+    dataKeluhan.push({
     nama: nama,
     hari: hari,
     email: email,
@@ -29,9 +31,9 @@ function submitForm() {
     keluhan: keluhan,
     kayu : kayu,
     gender: gender
-    }));
-
+    });
     alert("Keluhan anda berhasil terkirim");
+    sessionStorage.setItem('dataKeluhan', JSON.stringify(dataKeluhan));
     window.location.href = "riwayat.html"
 }
 
