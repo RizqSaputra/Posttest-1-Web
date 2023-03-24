@@ -7,12 +7,16 @@ Tema : Toko Kayu
 Terdapat beberapa halaman dalam website ini yaitu : Halaman Daftar, Halaman Login, Halaman Beranda, Halaman Produk, Halaman Keluhan, dan Halaman Lokasi
 
 - Halaman Daftar
+
+
 ![image](https://user-images.githubusercontent.com/93662986/227615471-be6b9dce-7abb-48f8-96d0-c2c55815aa7a.png)
 
 - Simpan data akun ke local storage
+
 ![image](https://user-images.githubusercontent.com/93662986/227616380-ae15cceb-e402-4d8c-a7b2-22f8ed245337.png)
 
 - Halaman Login
+
 ![image](https://user-images.githubusercontent.com/93662986/227616491-5eb22af5-5e6c-4ab7-aa00-2393d19b8f08.png)
 
 - Halaman Beranda
